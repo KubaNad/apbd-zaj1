@@ -8,5 +8,6 @@ public class Program
     {
         Console.WriteLine("Hello, World!");
         Console.WriteLine("Zmiana1");
+        Console.WriteLine("Zmiana2");
     }
 }
