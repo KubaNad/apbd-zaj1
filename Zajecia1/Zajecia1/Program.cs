@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 
+using Microsoft.VisualBasic.CompilerServices;
 
 public class Program
 {
@@ -22,5 +23,18 @@ public class Program
         Console.WriteLine(sum/arr.Length);
         double result = sum / arr.Length;
         return result;
+    }
+    public static double IntMax(int[] arr)
+    {
+        int max = int.MinValue;
+        for (var i = 0; i < arr.Length; i++)
+        {
+            if (arr[i] > max)
+            {
+                max = arr[i];
+            }
+        }
+        Console.WriteLine(max);
+        return max;
     }
 }
